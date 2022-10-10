@@ -139,7 +139,7 @@ body{
 
 /* ----------------------------------------------------Home Page------------------------------------------------------- */
 #hero{
-    background-image: url("images/hero4.png");
+    background-image: url("images/model1.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -240,7 +240,7 @@ body{
     width: 23%;
     min-width: 250px;
     padding:10px 12px;
-    border: 1px solid #cce7d0; 
+    border: 1px solid #e7d8f8; 
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
@@ -287,7 +287,7 @@ body{
     background-color:#eae3f3;
      /* font-weight: 500; */
     color: #967bb6;
-    border:1px solid #cce7d0;
+    border:1px solid #e7d8f8;
     position: absolute;
     bottom: 20px;
     right: 10px;
@@ -517,6 +517,94 @@ footer .copyright{
     text-align: center;
 }
 
+/* --------------------------------------------------------------------------- */
+
+/* -----------------------------Shop page------------------------------------- */
+#page-header{
+    background-image: url("images/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header p{
+    color: white;
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #967bb6;
+    padding: 15px 20px;
+    border-radius: 4px; 
+    color: white;
+    font-weight: 600;
+}
+
+
+/* ------------------------------------------------------------------------- */
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.small-img-col{
+    width: 100%;
+    cursor: pointer;
+    flex-basis: 24%;
+    
+}
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0 ;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding:  5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+
+}
+
+#prodetails .single-pro-details button{
+    background-color: #967bb6;
+    color: white;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
 
 /* -------------------------------Media Queries for Responsiveness---------------------------------------- */
 @media (max-width:799px) {
@@ -604,8 +692,9 @@ footer .copyright{
     }
     #hero {
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 75%;
     }
+    
     h2 {
         font-size: 32px;
         
@@ -637,6 +726,24 @@ footer .copyright{
 
    #newsletter .form {
     width: 100%;
-}
+    }
+
+    /* single product */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
 
 }
+
+
+
+
+
