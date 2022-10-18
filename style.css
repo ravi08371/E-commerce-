@@ -606,6 +606,154 @@ footer .copyright{
 }
 
 
+
+/* ---------------------------------------Blog Page-------------------------- */
+
+
+#page-header.blog-header{
+    background-image: url("images/banner/b19.jpg");
+}
+
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+
+}
+
+#blog img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+#blog .blog-details a{
+    text-decoration: none;    
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+}
+#blog .blog-details a:hover{
+    color: #967bb6;
+    transition: 0.3s;
+}
+
+
+/* ------------------------------About us Page----------------------------------------------------------- */
+
+#page-header.about-header{
+    background-image: url("images/about/banner.png");
+
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* -------------------------------Contact us page----------------------------------------------------------- */
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .details span,
+#form-details span{
+    font-size: 12px;
+}
+#contact-details .details h2,
+#form-details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 70px;
+}
+
+#form-details input,
+#form-details textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border:1px solid #e1e1e1 ;
+}
+
+#form-details button{
+    background-color:#967bb6 ;
+    color: white;
+}
+
+
+
+
 /* -------------------------------Media Queries for Responsiveness---------------------------------------- */
 @media (max-width:799px) {
     #navbar {
@@ -728,7 +876,7 @@ footer .copyright{
     width: 100%;
     }
 
-    /* single product */
+    /*----------------single product---------------- */
     #prodetails {
         display: flex;
         flex-direction: column;
@@ -739,6 +887,59 @@ footer .copyright{
     }
     #prodetails .single-pro-details{
         width: 100%;
+    }
+
+
+    /* ----------------Blog page MQ---------------- */
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog{
+        padding: 100px 20px 0 20px;        
+    }
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details{
+        width: 100%;
+    }
+
+
+    /* -------------about page-------------- */
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div{
+        padding-left: 0px;
+    }
+
+    #about-app .video{
+        width: 100%;
+    }
+
+    /* --------------------contact us page------------------- */
+    #contact-details{
+        flex-direction: column;
+    }
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details .map{
+        width: 100%;
+    }
+    #form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        width: 90%;
     }
 
 }
