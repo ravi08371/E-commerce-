@@ -285,6 +285,10 @@ body {
   bottom: 20px;
   right: 10px;
 }
+.pro button {
+  cursor: pointer;
+  display: block;
+}
 
 /* ----------------------------------------------------banner-------------------------------------------------- */
 #banner {
@@ -886,6 +890,14 @@ footer .copyright {
   background-color: #818ea0;
   color: white;
 }
+
+#nothingHereCart h2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: 34vw;
+  font-weight: 200;
+}
 /* -------------------------------Media Queries for Responsiveness---------------------------------------- */
 @media (max-width: 799px) {
   #navbar {
@@ -956,6 +968,9 @@ footer .copyright {
 
   #newsletter .form {
     width: 70%;
+  }
+  #nothingHereCart h2 {
+    margin-left: 8vw;
   }
 }
 
@@ -1072,5 +1087,8 @@ footer .copyright {
   #subtotal {
     width: 100%;
     padding: 20px;
+  }
+  #nothingHereCart h2 {
+    margin-left: 14vw;
   }
 }
