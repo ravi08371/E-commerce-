@@ -19,8 +19,8 @@ let cart = [];
 
 const addItemToCart = (item) => {
   cart.push(item);
-  console.log(`${item.name} added to cart.`);
-  console.log(`Cart: ${JSON.stringify(cart)}.`);
+  // console.log(`${item.name} added to cart.`);
+  // console.log(`Cart: ${JSON.stringify(cart)}.`);
   localStorage.setItem("cart", JSON.stringify(cart));
 };
 
@@ -55,7 +55,6 @@ function addtoCart(itemId) {
 // }
 
 window.onload = () => {
-  // Retrieve the items in the cart from local storage
   const cartSection = document.getElementById("cart-section");
 
   if (cartSection) {
@@ -116,7 +115,6 @@ window.onload = () => {
   }
 };
 
-// const cartSubtotal = document.getElementById("cartSubtotal");
 const cartItems = localStorage.getItem("cart");
 let carts = [];
 if (cartItems) {
